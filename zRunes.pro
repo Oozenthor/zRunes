@@ -22,3 +22,18 @@ HEADERS  += runes.h \
     zrunes.h
 
 FORMS    += runes.ui
+
+OTHER_FILES += \
+    ElderFuthark.xml \
+    LICENSE
+
+#target.file = ElderFuthark.xml
+#target.path = $$OUT_PWD
+#INSTALLS += target
+
+#message(pwd $$PWD)
+#message(out_pwd $$OUT_PWD)
+#message(other files $$OTHER_FILES)
+
+
+

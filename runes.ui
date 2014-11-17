@@ -6,39 +6,34 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>361</width>
+    <height>806</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Runes</string>
   </property>
-  <widget class="QTreeWidget" name="treeWidget">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>10</y>
-     <width>256</width>
-     <height>192</height>
-    </rect>
-   </property>
-   <column>
-    <property name="text">
-     <string notr="true">1</string>
-    </property>
-   </column>
-  </widget>
   <widget class="QPushButton" name="loadButton">
    <property name="geometry">
     <rect>
-     <x>190</x>
-     <y>210</y>
+     <x>280</x>
+     <y>10</y>
      <width>75</width>
      <height>23</height>
     </rect>
    </property>
    <property name="text">
     <string>Load xml</string>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="textBrowser">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>11</y>
+     <width>261</width>
+     <height>791</height>
+    </rect>
    </property>
   </widget>
  </widget>

@@ -1,49 +1,81 @@
 #include "zrunes.h"
 #include <QDebug>
 
-zRunes::zRunes()
+ZRunes::ZRunes()
 {
 }
 
-zRunes::~zRunes()
+ZRunes::~ZRunes()
 {
-
 }
 
-zRunes::zRunes(QTreeWidget *treeWidget): treeWidget(treeWidget)
+bool ZRunes::xmlRead(QIODevice *device)
 {
-      QStyle *style = treeWidget->style();
-
-      folderIcon.addPixmap(style->standardPixmap(QStyle::SP_DirClosedIcon),
-                           QIcon::Normal, QIcon::Off);
-      folderIcon.addPixmap(style->standardPixmap(QStyle::SP_DirOpenIcon),
-                           QIcon::Normal, QIcon::On);
-      bookmarkIcon.addPixmap(style->standardPixmap(QStyle::SP_FileIcon));
-}
-
-bool zRunes::read(QIODevice *device)
-{
-  xml.setDevice(device);
-
-  if (xml.readNextStartElement()) {
-      if (xml.name() == "ElderFuthark" && xml.attributes().value("version") == "1.0")
-          readXmlRunes();
-      else
-          xml.raiseError(QObject::tr("The file is not an ElderFuthark version 1.0 file."));
+  xml.setDevice(device); // Set read position to start of file
+  if (xml.readNextStartElement()) { // Find first level (root) xml tag
+    qDebug() << "Root Name" << xml.name();
+    if (xml.name() == XMLDOCTYPE && xml.attributes().value("version") == XMLVERSION) {
+      readXmlContents();
+    } else {
+      qDebug() << "File has incorrect DocType /  Version.";
+      xml.raiseError(QObject::tr("File has incorrect DocType /  Version."));
+    }
   }
   return !xml.error();
 }
 
-QString zRunes::errorString() const
+QString ZRunes::errorString() const
 {
   return QObject::tr("%1\nLine %2, column %3")
-          .arg(xml.errorString())
-          .arg(xml.lineNumber())
-          .arg(xml.columnNumber());
+      .arg(xml.errorString())
+      .arg(xml.lineNumber())
+      .arg(xml.columnNumber());
 }
 
-void zRunes::readXmlRunes()
+void ZRunes::readXmlContents()
 {
-  qDebug() << "read runes";
+  qDebug() << "Read runes";
 
+  Q_ASSERT(xml.isStartElement() && xml.name() == XMLDOCTYPE);
+
+  while (xml.readNextStartElement()) {
+    if (xml.name() == "Rune") {
+//      qDebug() << xml.name();
+      readRune();
+    } else {
+      xml.skipCurrentElement();
+    }
+  }
+}
+
+void ZRunes::readRune()
+{
+  zRuneStruct data;
+
+  Q_ASSERT(xml.isStartElement() && xml.name() == "Rune");
+
+  while (xml.readNextStartElement()) {
+    if (xml.name() == "Name")
+      data.name = xml.readElementText();
+    else if (xml.name() == "Letter")
+      data.letter = xml.readElementText();
+    else if (xml.name() == "Meaning")
+      data.meaning = xml.readElementText();
+    else if (xml.name() == "Reverse") {
+      if (xml.readElementText() == "true") {
+        data.reverse = true;
+      } else {
+        data.reverse = false;
+      }
+    }
+    else if (xml.name() == "UTFValue")
+      data.UTFValue = xml.readElementText();
+    else if (xml.name() == "UTF")
+      data.UTF = xml.readElementText();
+    else
+      xml.skipCurrentElement();
+  }
+  zRuneList.append(data);
+//  qDebug() << data.name << data.letter << data.meaning <<
+//              data.reverse << data.UTFValue << data.UTF;
 }
