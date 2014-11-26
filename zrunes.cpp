@@ -51,16 +51,20 @@ void ZRunes::readXmlContents()
 void ZRunes::readRune()
 {
   zRuneStruct data;
+  bool ok;
 
   Q_ASSERT(xml.isStartElement() && xml.name() == "Rune");
 
+  data.number = xml.attributes().value("number").toInt(&ok);
   while (xml.readNextStartElement()) {
-    if (xml.name() == "Name")
+    if (xml.name() == "Name") {
+      data.latin = xml.attributes().value("latin").toString();
       data.name = xml.readElementText();
-    else if (xml.name() == "Letter")
-      data.letter = xml.readElementText();
+    }
     else if (xml.name() == "Meaning")
       data.meaning = xml.readElementText();
+    else if (xml.name() == "Divination")
+      data.divination = xml.readElementText();
     else if (xml.name() == "Reverse") {
       if (xml.readElementText() == "true") {
         data.reverse = true;
@@ -68,14 +72,23 @@ void ZRunes::readRune()
         data.reverse = false;
       }
     }
-    else if (xml.name() == "UTFValue")
-      data.UTFValue = xml.readElementText();
-    else if (xml.name() == "UTF")
+    else if (xml.name() == "Type") {
+      data.rank = xml.attributes().value("rank").toInt(&ok);
+      data.type = xml.readElementText();
+    }
+    else if (xml.name() == "Root") {
+      data.order = xml.attributes().value("order").toInt(&ok);
+      data.root = xml.readElementText();
+    }
+    else if (xml.name() == "UTF") {
+      data.value =  xml.attributes().value("value").toString();
       data.UTF = xml.readElementText();
+    }
     else
       xml.skipCurrentElement();
   }
-  zRuneList.append(data);
+  qDebug() << data.order << data.root;
+  all.append(data);
 //  qDebug() << data.name << data.letter << data.meaning <<
 //              data.reverse << data.UTFValue << data.UTF;
 }

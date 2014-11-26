@@ -1,196 +1,196 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE ElderFuthark>
 <ElderFuthark  version="1.0">
-  <Rune>
-    <Name>Fehu</Name>
-    <Letter>f</Letter>
-    <Meaning>Possessions</Meaning>
+  <Rune number="1">
+    <Name latin="f">Fehu</Name>
+    <Meaning>Wealth, Cattle</Meaning>
+    <Divination>Possession</Divination>
     <Reverse>true</Reverse>
-    <UTFValue>16A0</UTFValue>
-    <UTF>ᚠ</UTF>
+    <Type rank="1">Animal</Type>    <Root order="1">Norn</Root>
+    <UTF value="16A0">ᚠ</UTF>
   </Rune>
-  <Rune>
-    <Name>Uruz</Name>
-    <Letter>u</Letter>
-    <Meaning>Strength</Meaning>
+  <Rune number="2">
+    <Name latin="u">Uruz</Name>
+    <Meaning>Rain</Meaning>
+    <Divination>Strength</Divination>
     <Reverse>true</Reverse>
-    <UTFValue>16A2</UTFValue>
-    <UTF>ᚢ</UTF>
+    <Type rank="1">Water</Type>    <Root order="2">Norn</Root>
+    <UTF value="16A2">ᚢ</UTF>
   </Rune>
-  <Rune>
-    <Name>Thurisaz</Name>
-    <Letter>th</Letter>
-    <Meaning>Gateway</Meaning>
+  <Rune number="3">
+    <Name latin="th">Thurisaz</Name>
+    <Meaning>The god Thor</Meaning>
+    <Divination>Gateway</Divination>
     <Reverse>true</Reverse>
-    <UTFValue>16A6</UTFValue>
-    <UTF>ᚦ</UTF>
+    <Type rank="1">God</Type>    <Root order="3">Norn</Root>
+    <UTF value="16A6">ᚦ</UTF>
   </Rune>
-  <Rune>
-    <Name>Ansuz</Name>
-    <Letter>a</Letter>
-    <Meaning>Signals</Meaning>
+  <Rune number="4">
+    <Name latin="a">Ansuz</Name>
+    <Meaning>An Aesir god</Meaning>
+    <Divination>Signals</Divination>
     <Reverse>true</Reverse>
-    <UTFValue>16A8</UTFValue>
-    <UTF>ᚨ</UTF>
+    <Type rank="2">God</Type>    <Root order="4">Norn</Root>
+    <UTF value="16A8">ᚨ</UTF>
   </Rune>
-  <Rune>
-    <Name>Raido</Name>
-    <Letter>r</Letter>
+  <Rune number="5">
+    <Name latin="r">Raido</Name>
     <Meaning>Journey</Meaning>
+    <Divination>Journey</Divination>
     <Reverse>true</Reverse>
-    <UTFValue>16B1</UTFValue>
-    <UTF>ᚱ</UTF>
+    <Type rank="1">Transfer</Type>    <Root order="5">Norn</Root>
+    <UTF value="16B1">ᚱ</UTF>
   </Rune>
-  <Rune>
-    <Name>Kaunan</Name>
-    <Letter>k</Letter>
-    <Meaning>Opening</Meaning>
+  <Rune number="6">
+    <Name latin="k">Kaunan</Name>
+    <Meaning>Firebrand</Meaning>
+    <Divination>Opening</Divination>
     <Reverse>true</Reverse>
-    <UTFValue>16B4</UTFValue>
-    <UTF>ᚴ</UTF>
+    <Type rank="1">Fire</Type>    <Root order="6">Norn</Root>
+    <UTF value="16B4">ᚴ</UTF>
   </Rune>
-  <Rune>
-    <Name>Gebo</Name>
-    <Letter>g</Letter>
-    <Meaning>Partnership</Meaning>
+  <Rune number="7">
+    <Name latin="g">Gebo</Name>
+    <Meaning>Gift</Meaning>
+    <Divination>Partnership</Divination>
     <Reverse>false</Reverse>
-    <UTFValue>16B7</UTFValue>
-    <UTF>ᚷ</UTF>
+    <Type rank="2">Transfer</Type>    <Root order="7">Norn</Root>
+    <UTF value="16B7">ᚷ</UTF>
   </Rune>
-  <Rune>
-    <Name>Wunjo</Name>
-    <Letter>w</Letter>
+  <Rune number="8">
+    <Name latin="w">Wunjo</Name>
     <Meaning>Joy</Meaning>
+    <Divination>Joy</Divination>
     <Reverse>true</Reverse>
-    <UTFValue>16B9</UTFValue>
-    <UTF>ᚹ</UTF>
+    <Type rank="3">Transfer</Type>    <Root order="8">Norn</Root>
+    <UTF value="16B9">ᚹ</UTF>
   </Rune>
-  <Rune>
-    <Name>Haglaz</Name>
-    <Letter>h</Letter>
-    <Meaning>Disruption</Meaning>
+  <Rune number="9">
+    <Name latin="h">Haglaz</Name>
+    <Meaning>Hail (Weather)</Meaning>
+    <Divination>Disruption</Divination>
     <Reverse>false</Reverse>
-    <UTFValue>16BA</UTFValue>
-    <UTF>ᚺ</UTF>
+    <Type rank="2">Water</Type>    <Root order="1">Dragon</Root>
+    <UTF value="16BA">ᚺ</UTF>
   </Rune>
-  <Rune>
-    <Name>Naudiz</Name>
-    <Letter>n</Letter>
-    <Meaning>Constraint</Meaning>
+  <Rune number="10">
+    <Name latin="n">Naudiz</Name>
+    <Meaning>Need, Distress</Meaning>
+    <Divination>Constraint</Divination>
     <Reverse>true</Reverse>
-    <UTFValue>16BE</UTFValue>
-    <UTF>ᚾ</UTF>
+    <Type rank="2">Fire</Type>    <Root order="2">Dragon</Root>
+    <UTF value="16BE">ᚾ</UTF>
   </Rune>
-  <Rune>
-    <Name>Isaz</Name>
-    <Letter>i</Letter>
-    <Meaning>Standstill</Meaning>
+  <Rune number="11">
+    <Name latin="i">Isaz</Name>
+    <Meaning>Ice</Meaning>
+    <Divination>Standstill</Divination>
     <Reverse>false</Reverse>
-    <UTFValue>16C1</UTFValue>
-    <UTF>ᛁ</UTF>
+    <Type rank="3">Water</Type>    <Root order="3">Dragon</Root>
+    <UTF value="16C1">ᛁ</UTF>
   </Rune>
-  <Rune>
-    <Name>Jeran</Name>
-    <Letter>j</Letter>
-    <Meaning>Harvest</Meaning>
+  <Rune number="12">
+    <Name latin="j">Jeran</Name>
+    <Meaning>Harvest. Agricultural year</Meaning>
+    <Divination>Harvest</Divination>
     <Reverse>false</Reverse>
-    <UTFValue>16C3</UTFValue>
-    <UTF>ᛃ</UTF>
+    <Type rank="1">Plant</Type>    <Root order="4">Dragon</Root>
+    <UTF value="16C3">ᛃ</UTF>
   </Rune>
-  <Rune>
-    <Name>Eihaz</Name>
-    <Letter>eoh</Letter>
-    <Meaning>Defence</Meaning>
+  <Rune number="13">
+    <Name latin="eoh">Eihaz</Name>
+    <Meaning>Yew tree</Meaning>
+    <Divination>Defence</Divination>
     <Reverse>false</Reverse>
-    <UTFValue>16C7</UTFValue>
-    <UTF>ᛇ</UTF>
+    <Type rank="2">Plant</Type>    <Root order="5">Dragon</Root>
+    <UTF value="16C7">ᛇ</UTF>
   </Rune>
-  <Rune>
-    <Name>Pertho</Name>
-    <Letter>p</Letter>
-    <Meaning>Initiation</Meaning>
+  <Rune number="14">
+    <Name latin="p">Pertho</Name>
+    <Meaning>Fruit tree</Meaning>
+    <Divination>Initiation</Divination>
     <Reverse>true</Reverse>
-    <UTFValue>16C8</UTFValue>
-    <UTF>ᛈ</UTF>
+    <Type rank="3">Plant</Type>    <Root order="6">Dragon</Root>
+    <UTF value="16C8">ᛈ</UTF>
   </Rune>
-  <Rune>
-    <Name>Algiz</Name>
-    <Letter>z</Letter>
-    <Meaning>Protection</Meaning>
+  <Rune number="15">
+    <Name latin="z">Algiz</Name>
+    <Meaning>Elk</Meaning>
+    <Divination>Protection</Divination>
     <Reverse>true</Reverse>
-    <UTFValue>16C9</UTFValue>
-    <UTF>ᛉ</UTF>
+    <Type rank="2">Animal</Type>    <Root order="7">Dragon</Root>
+    <UTF value="16C9">ᛉ</UTF>
   </Rune>
-  <Rune>
-    <Name>Sowilo</Name>
-    <Letter>s</Letter>
-    <Meaning>Wholeness</Meaning>
+  <Rune number="16">
+    <Name latin="s">Sowilo</Name>
+    <Meaning>Sun</Meaning>
+    <Divination>Wholeness</Divination>
     <Reverse>false</Reverse>
-    <UTFValue>16CA</UTFValue>
-    <UTF>ᛊ</UTF>
+    <Type rank="3">Fire</Type>    <Root order="8">Dragon</Root>
+    <UTF value="16CA">ᛊ</UTF>
   </Rune>
-  <Rune>
-    <Name>Tiwaz</Name>
-    <Letter>t</Letter>
-    <Meaning>Warrior</Meaning>
+  <Rune number="17">
+    <Name latin="t">Tiwaz</Name>
+    <Meaning>The god Týr</Meaning>
+    <Divination>Warrior</Divination>
     <Reverse>true</Reverse>
-    <UTFValue>16CF</UTFValue>
-    <UTF>ᛏ</UTF>
+    <Type rank="3">God</Type>    <Root order="1">Mimir</Root>
+    <UTF value="16CF">ᛏ</UTF>
   </Rune>
-  <Rune>
-    <Name>Berkanan</Name>
-    <Letter>b</Letter>
-    <Meaning>Growth</Meaning>
+  <Rune number="18">
+    <Name latin="b">Berkanan</Name>
+    <Meaning>Birch</Meaning>
+    <Divination>Growth</Divination>
     <Reverse>true</Reverse>
-    <UTFValue>16D2</UTFValue>
-    <UTF>ᛒ</UTF>
+    <Type rank="4">Plant</Type>    <Root order="2">Mimir</Root>
+    <UTF value="16D2">ᛒ</UTF>
   </Rune>
-  <Rune>
-    <Name>Ehwaz</Name>
-    <Letter>e</Letter>
-    <Meaning>Movement</Meaning>
+  <Rune number="19">
+    <Name latin="e">Ehwaz</Name>
+    <Meaning>Horse</Meaning>
+    <Divination>Movement</Divination>
     <Reverse>true</Reverse>
-    <UTFValue>16D6</UTFValue>
-    <UTF>ᛖ</UTF>
+    <Type rank="3">Animal</Type>    <Root order="3">Mimir</Root>
+    <UTF value="16D6">ᛖ</UTF>
   </Rune>
-  <Rune>
-    <Name>Mannaz</Name>
-    <Letter>m</Letter>
-    <Meaning>Self</Meaning>
+  <Rune number="20">
+    <Name latin="m">Mannaz</Name>
+    <Meaning>Man</Meaning>
+    <Divination>Self</Divination>
     <Reverse>true</Reverse>
-    <UTFValue>16D7</UTFValue>
-    <UTF>ᛗ</UTF>
+    <Type rank="4">Animal</Type>    <Root order="4">Mimir</Root>
+    <UTF value="16D7">ᛗ</UTF>
   </Rune>
-  <Rune>
-    <Name>Laukaz</Name>
-    <Letter>l</Letter>
-    <Meaning>Flow</Meaning>
+  <Rune number="21">
+    <Name latin="l">Laukaz</Name>
+    <Meaning>Water, Lake</Meaning>
+    <Divination>Flow</Divination>
     <Reverse>true</Reverse>
-    <UTFValue>16DA</UTFValue>
-    <UTF>ᛚ</UTF>
+    <Type rank="4">Water</Type>    <Root order="5">Mimir</Root>
+    <UTF value="16DA">ᛚ</UTF>
   </Rune>
-  <Rune>
-    <Name>Ingwuz</Name>
-    <Letter>ng</Letter>
-    <Meaning>Fertility</Meaning>
+  <Rune number="22">
+    <Name latin="ng">Ingwuz</Name>
+    <Meaning>The god Ing (Freyr)</Meaning>
+    <Divination>Fertility</Divination>
     <Reverse>false</Reverse>
-    <UTFValue>16DC</UTFValue>
-    <UTF>ᛜ</UTF>
+    <Type rank="4">God</Type>    <Root order="6">Mimir</Root>
+    <UTF value="16DC">ᛜ</UTF>
   </Rune>
-  <Rune>
-    <Name>Dagaz</Name>
-    <Letter>d</Letter>
-    <Meaning>Breakthrough</Meaning>
-    <Reverse>false</Reverse>
-    <UTFValue>16DE</UTFValue>
-    <UTF>ᛞ</UTF>
-  </Rune>
-  <Rune>
-    <Name>Othila</Name>
-    <Letter>o</Letter>
-    <Meaning>Seperation</Meaning>
+  <Rune number="23">
+    <Name latin="o">Othila</Name>
+    <Meaning>Heritage, Estate, Possession</Meaning>
+    <Divination>Seperation</Divination>
     <Reverse>true</Reverse>
-    <UTFValue>16DF</UTFValue>
-    <UTF>ᛟ</UTF>
+    <Type rank="4">Transfer</Type>    <Root order="7">Mimir</Root>
+    <UTF value="16DF">ᛟ</UTF>
+  </Rune>
+  <Rune number="24">
+    <Name latin="d">Dagaz</Name>
+    <Meaning>Day</Meaning>
+    <Divination>Breakthrough</Divination>
+    <Reverse>false</Reverse>
+    <Type rank="4">Fire</Type>    <Root order="8">Mimir</Root>
+    <UTF value="16DE">ᛞ</UTF>
   </Rune>
 </ElderFuthark>

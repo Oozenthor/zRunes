@@ -21,15 +21,21 @@ public:
   QString errorString() const;
 
   struct zRuneStruct {
-    QString name;     // English rune name
-    QString letter;   // Equivilent english letter(s)
-    QString meaning;  // Runes significance
-    bool reverse;     // true if rune reversable
-    QString UTFValue; // Unicode address
-    QString UTF;      // Unicode character
+    int number;         // ElderFuthark alphabet position
+    QString name;       // English rune name
+    QString latin;      // Equivilent english letter(s)
+    QString meaning;    // Runes significance
+    QString divination; // Runes significance
+    bool reverse;       // true if rune reversable
+    int rank;           // Rune type rank
+    QString type;       // rune type
+    int order;          // Yggdrasil root order
+    QString root;       // Yggdrasil root creature
+    QString value;      // Unicode address
+    QString UTF;        // Unicode character
   };
 
-  QList<zRuneStruct> zRuneList;
+  QList<zRuneStruct> all;
 
   void readXmlRunes();
 
